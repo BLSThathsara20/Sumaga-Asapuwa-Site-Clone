@@ -1,0 +1,481 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Heder Section style begin  */
+
+nav{
+    background-color: #F7A503;
+}
+.nav_bac{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.logo{
+    text-align: center;
+    margin: 10px;
+}
+.logo img{
+    width: 240px;
+    height: auto;
+}
+.navigation{
+    text-align: center;
+    margin: 20px 0;
+    width: 100%;
+}
+.navigation li{
+    padding: 5px;
+    list-style-type: none;
+    transition: transform 0.5s;
+}
+.navigation li:hover{
+    transform: scale(0.8);
+}
+.navigation a{
+    color: #3C3C3C;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+.navigation a:hover{
+    text-decoration: underline;
+}
+/*====================Front Page style start=================*/
+/* header image slider style start */
+
+.image_slider img{
+    width: 515px;
+    height: auto;
+}
+.image_slider{
+    overflow: hidden;
+    display: flex;
+}
+.slider_controlers{
+    display: flex;
+    justify-content: space-between;
+}
+.left-arrow{
+    position: absolute;
+    top: 160px;
+    right: 0;
+}
+.right-arrow{
+    position: absolute;
+    top: 160px;
+    left: 0;
+}
+
+/* header image slider style end */
+
+main{
+    text-align: center;
+}
+.quot h1{
+    margin: 40px;
+    color: #EC9700;
+    text-shadow: 1px 1.5px 3px #3C3C3C;
+    font-size: 47px;
+    font-weight: 400;
+}
+main h2{
+    margin: 20px;
+    color: #6F6F6F;
+    font-size: 20px;
+}
+.main-image img{
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+}
+.main-image{
+    margin: 10px;
+}
+.description_para{
+    color: #212529;
+    font-weight: 400;
+    font-size: 16px;
+}
+figure img{
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.anouncement{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    margin: 10px;
+}
+.anouncement_header{
+    grid-column: 1/13;
+}
+.anouncement_banner{
+    grid-column: 1/13;
+}
+.anouncement_header h3{
+    background-color: #f7a503;
+    padding: 10px 8px;
+    margin-bottom: 20px;
+    color: #3C3C3C;
+    font-weight: 900;
+    line-height: 1;
+}
+figcaption p{
+    color: #6F6F6F;
+    font-size: 16px;
+}
+.section-1{
+    text-align: left;
+    max-width: 1240px;
+    margin: 40px auto;
+}
+.section-1 p{
+    margin: 20px 10px;
+}
+
+/*-----------Article section style start-------------*/
+
+.article_section{
+    background-color: #ffdda1;
+    margin: 40px auto;
+    padding: 50px 0 80px 0;
+}
+.article_section h1{
+    font-size: 24px;
+    color: #3C3C3C;
+    font-weight: 900;
+    line-height: 1.7em;
+    margin-bottom: 15px;
+}
+.article_cards {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    justify-content: space-between;
+}
+.article_cards img{
+    width: 100%;
+    height: auto;
+}
+.card-1{
+    grid-column: 1/7;
+}
+.card-2{
+    grid-column: 7/13;
+}
+.card-3{
+    grid-column: 1/7;
+}
+.card-4{
+    grid-column: 7/13;
+}
+.card-background{
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+.card-header img{
+    border-radius: 5px 5px 0 0;
+    opacity: 0.9;
+    transition: opacity 0.5s;
+}
+.card-header img:hover{
+    opacity: 1;
+}
+.card-description{
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: #777;
+}
+.card-body{
+    margin: 15px;
+    text-align: left;
+}
+.card-body h2,a{
+    font-size: 24px;
+    font-weight: 900;
+    color: #3C3C3C;
+    margin: 0;
+    padding: 0;
+    margin: 5px 0 12px 0;
+    text-decoration: none;
+}
+.card-body p{
+    font-size: 14px;
+}
+.card-footer p{
+    margin: 12px;
+    text-align: left;
+}
+.card-link{
+    color: #F7A503;
+    text-decoration: none;
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.card-link span{
+    font-size: 12px;
+}
+.card-footer{
+    border-top: 1px solid #eaeaea;
+}
+.card-footer p{
+    color: #adadad;
+    font-size: 12px;
+}
+
+/*-----------Article section style end-------------*/
+
+/*-----------Social Media connect section style begin-------------*/
+.social_media_section{
+    margin: 50px 25px;
+}
+.youtube_video{
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    justify-content: space-between;
+}
+.video-1{
+    grid-column: 1/7;
+}
+.video-2{
+    grid-column: 7/13;
+}
+.video-3{
+    display: none;
+}
+.y-video {
+    margin: 10px;
+}
+.y-video iframe{
+    border: 0;
+    width: 100%;
+    height: auto;
+}
+.y-video h3{
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(17, 17, 17);
+    line-height: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 10px 0;
+}
+.y-video p{
+    font-size: 13px;
+    text-align: left;
+    color: rgb(17, 17, 17);
+    margin: 10px 0;
+}
+#host_date{
+    color: rgba(17, 17, 17, 0.7);
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+}
+#youtube_visit{
+    background-color: #e30000;
+    cursor: pointer;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 28px 0 80px 0;
+}
+#youtube_visit:hover{
+    text-decoration: underline;
+}
+.pages{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+.page-1{
+    grid-column: 1/13;
+    margin: 0 0 40px 0;
+}
+.page-2{
+    grid-column: 1/13;
+    margin: 0 0 80px 0;
+}
+
+/*-----------Social Media connect section style end-------------*/
+/*====================Front Page style end=================*/
+
+/*====================Contact us Page style=================*/
+.contact-info{
+    max-width: 960px;
+    margin: 0 auto;
+    font-size: 15px;
+    text-align: center;
+}
+.g-map{
+    margin: 60px 10px 40px 10px;
+}
+.address{
+    max-width: 560px;
+    margin: 0 auto;
+}
+.cotact_social_icons img{
+    width: 50px;
+    height: auto;
+    margin: 40px 5px 40px 5px;
+}
+.cotact_social_icons img:hover{
+    opacity: 0.8;
+}
+/*====================Contact us Page style end=================*/
+
+
+/*-----------Footer Section Style start------------*/
+
+footer{
+    height: 20vh;
+    width: auto;
+    background-color:#3c3c3c;
+    color: white;
+}
+.social_icons{
+    padding-top: 40px;
+}
+.footer_social_links{
+    max-width: 1240px;
+    margin: 0 auto;
+    text-align: center;
+}
+.social_icons img{
+    width: 30px;
+    height: auto;
+    opacity: 0.9;
+    transform: opacity 0.5;
+    margin-bottom: 10px;
+}
+.social_icons img:hover{
+    opacity: 1;
+}
+.fb-ico{
+    margin-right: 5px;
+}
+.youtube-ico{
+    margin-left: 5px;
+}
+small{
+    font-size: 12px;
+}
+
+
+/*-----------Footer Section Style end------------*/
+
+
+@media screen and (min-width: 768px){
+    /* Heder Section 960px responsive style begin */
+    .logo{
+        text-align: left;
+    }
+    .nav_bac{
+        flex-direction: row;
+        align-items: center;
+    }
+    .navigation{
+        width: 100%;
+    }
+    .navigation ul{
+        display: block;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .navigation a{
+        padding: 5px 20px;
+    }
+    .navigation a:hover{
+        text-decoration: underline;
+        color: #3C3C3C;
+    }
+    /*====================Front Page responsive style start=================*/
+    /* header image slider responsive style start  */
+
+    /* header image slider responsive style end  */
+    .section-1{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+    }
+    .discription{
+        grid-column: 1/9;
+    }
+    .anouncement{
+        grid-column: 9/13;
+        margin-left: 25px;
+
+    }
+    /*-----------Article section responsive style start-------------*/
+    .card-1{
+        grid-column: 1/4;
+    }
+    .card-2{
+        grid-column: 4/7;
+    }
+    .card-3{
+        grid-column: 7/10;
+    }
+    .card-4{
+        grid-column: 10/13;
+    }
+
+    /*-----------Article section responsive style end-------------*/
+
+    /*-----------Social Media connect section responsive style begin-------------*/
+    #youtube_visit{
+        background-color: #e30000;
+        cursor: pointer;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        font-size: 24px;
+        font-weight: 600;
+        margin: 120px 0 80px 0;
+    }
+    .video-1{
+        grid-column: 1/5;
+    }
+    .video-2{
+        grid-column: 5/9;
+    }
+    .video-3{
+        grid-column: 9/13;
+        display: inline-block;
+    }
+    .y-video iframe{
+        border: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .page-1{
+        grid-column: 1/7;
+    }
+    .page-2{
+        grid-column: 7/13;
+    }
+    .pages{
+        justify-content: space-around;
+        margin: 10px 100px 80px 100px;
+    }
+        /*====================Front Page responsive style end=================*/
+}
